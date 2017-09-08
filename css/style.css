@@ -1,17 +1,42 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  color: #333; }
+  color: #333;
+  background: #ededed; }
 
 header.home {
-  background: lime;
+  background: #b9bab9;
   height: 70vh; }
 
 header.hero {
-  background: lime;
-  height: 30vh; }
+  background: #b9bab9;
+  height: 60vh; }
 
-nav {
-  width: 100%;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background: gray;
+  padding: 1em; }
+
+nav ul li {
+  display: inline;
+  list-style: none;
+  padding: 0; }
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  background: white;
+  width: 90%;
+  margin: 0 auto; }
+
+.box {
   background: black;
-  height: 100px; }
+  color: white; }
+
+.intro {
+  background: aqua;
+  grid-column: 1 / 5;
+  grid-row: 1; }

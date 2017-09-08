@@ -1,24 +1,59 @@
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$test-color: #b9bab9;
+$box-color: black;
 
 body {
 	margin: 0;
 	font-family: $font-stack;
 	color: $primary-color;
+	background: #ededed;
 }
 
 header.home {
-	background: lime;
+	background: $test-color;
 	height: 70vh;
 }
 
 header.hero {
-	background: lime;
-	height: 30vh;
+	background: $test-color;
+	height: 60vh;
+}
+
+.topbar {
+	display: flex;
+	justify-content: space-between;
+	background: gray;
+	padding: 1em;
 }
 
 nav {
-		width: 100%;
-		background: black;
-		height: 100px
+		
+			
+		ul li {
+			display: inline;
+			list-style: none;
+			padding: 0;
+		}
 }
+
+.wrapper {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	background: white;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.box {
+	background: $box-color;
+	color: white;
+}
+
+.intro {
+		background: aqua;
+		grid-column: 1 / 5;
+		grid-row: 1;
+	}
