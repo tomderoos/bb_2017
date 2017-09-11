@@ -10,9 +10,41 @@ body {
 	background: #ededed;
 }
 
+
+
 header.home {
-	background:  url(../img/vuurpijl.png) no-repeat center center fixed; 
-	height: 70vh;
+	min-height: 70vh;
+}
+
+.homewrap {
+	display: grid;
+	height: 30vh;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	width: 90%;
+	margin: 0 auto;
+	
+	.welkom {
+		grid-column: 1 / 2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	
+	.vuurpijl { 
+		grid-column: 2 / 4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		
+		img {
+		margin: 0 auto;
+		width: 50%;
+		height: auto;
+		}
+	}
 }
 
 header.hero {
